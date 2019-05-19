@@ -73,11 +73,12 @@ try:
   ftp = FTP(server)
   ftp.login('b4l0x', 'terrorista')
   ftp.exit()
-except Exception as e:
-  if(str(e)=="530 Login incorrect."):
+except Exception as err:
+  if(str(err).startswith("530 ")):
     print(" [+] Host recebeu os pacotes")
     print(" [+] Iniciando brute force\n")
     iniciar()
-  elif(str(e)!="530 Login incorrect."):
+  else:
+    #print(err)
     print("\n [!] Verifique servidor e porta e tente novamente, host sem resposta")
     exit()
