@@ -10,4 +10,4 @@ import argparse as arg<br>
 import os<br>
 import _thread<br>
 
-<img src="">
+<img src="https://raw.githubusercontent.com/B4l0x/FTP-Brute-Force/master/Capturar.PNG">
